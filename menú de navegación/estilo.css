@@ -1,34 +1,50 @@
+:root{
+    --bg-body: #1a181bff;
+    --english-violet: #564d65ff;
+    --texto: #3e8989ff;
+    --sombras: #2cda9dff;
+    --titulo-principal: #05f140ff;
+    --color-iconos: #ffffff;
+    --color-iconos-hover: #05f140ff;
+    --footer-bg: #110f11;
+  }
 body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(162, 162, 239);
+    background-color:var(--bg-body);
+    min-height: 100vh; /* Usa min-height para que el contenido no se corte si es más corto que la ventana */
     margin:0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 header{
-    background-color: rgb(46, 46, 118);
+    background-color: var(--footer-bg);
     color:#fff;
     text-align: center;
     padding: 20px 0;
 }
 h1{
     margin:0;
-    font-size: 2em;
+    font-size:2em;
 }
 
 .lista_navegador{
     list-style: none;
-    background-color: blueviolet;
+    background-color:var(--footer-bg);
     padding: 10px;
     display: flex;
     justify-content: center;
     
 }
-.lista_navegador li{
+.lista_navegador li a{
     margin: 15px;
-    transition: 2s;
+    transition: 1s;
+    text-decoration: none;
+    color: var(--color-iconos);
 }
-.lista_navegador li:hover{
-    color:#e1ff00;
-    font-size: 2em;
+.lista_navegador li a:hover{
+    color:var(--color-iconos-hover);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--sombras);
 }
-

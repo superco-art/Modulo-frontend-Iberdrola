@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloJuego.css">
+    <title>Juego</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>¡Adivina el número secreto!</h1>
+        <p>Tiempo restante: <span id="temporizador">60</span> segundos</p>
+        <input type="number" id="adivinaInput" placeholder="Escribe un número del 1 al 100...">
+        <button onclick="adivinar()">¡Adivina!</button>
+        <p id="resultado"></p>
+        <button id="reiniciarBtn" onclick="reiniciar()" style="display:none">Reiniciar</button>
+    </div>
+    <script src="accionJuego.js"></script>
+</body>
+</html>

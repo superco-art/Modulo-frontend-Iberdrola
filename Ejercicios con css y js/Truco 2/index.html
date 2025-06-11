@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos2.css">
+  <title>Menú Deslizable</title>
+</head>
+<body>
+  <button class="toggle">☰ Menú</button>
+  <div class="menu">
+    <h3>Menú</h3>
+    <ul>
+      <li>Inicio</li>
+      <li>Acerca</li>
+      <li>Contacto</li>
+    </ul>
+  </div>
+
+  <script>
+    document.querySelector('.toggle').onclick = () => {
+      document.querySelector('.menu').classList.toggle('abierto');
+    };
+  </script>
+</body>
+</html>

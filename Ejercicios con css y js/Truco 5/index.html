@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos5.css">
+  <title>Botón Escapista</title>
+</head>
+<body>
+  <button id="escapista">Haz clic si puedes 😈</button>
+
+  <script>
+    const btn = document.getElementById('escapista');
+    btn.onmouseenter = () => {
+      const x = Math.random() * (window.innerWidth - 100);
+      const y = Math.random() * (window.innerHeight - 50);
+      btn.style.left = `${x}px`;
+      btn.style.top = `${y}px`;
+    };
+  </script>
+</body>
+</html>
